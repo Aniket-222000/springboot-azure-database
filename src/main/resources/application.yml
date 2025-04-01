@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://azdbserver1.database.windows.net:1433;database=AzureDatabase;user=admin123@azdbserver1;password=Test@2025;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
